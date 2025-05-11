@@ -9,6 +9,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
         <button onClick={() => setCurrentPage("about")}>소개</button>
         <button onClick={() => setCurrentPage("projects")}>프로젝트</button>
         <button onClick={() => setCurrentPage("contact")}>연락처</button>
+        <button onClick={() => setCurrentPage("hobby")}>취미</button>
       </nav>
     </header>
   );

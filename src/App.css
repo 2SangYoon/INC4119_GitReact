@@ -116,7 +116,9 @@
 }
 
 .profile img {
-  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  border-radius: 75%;
 }
 
 .skills ul {
@@ -184,8 +186,56 @@
 .project-link:hover {
   background-color: #34495e;
 }
+/* 취미 페이지 스타일 */
+.recommendations {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.recommendations_song,
+.recommendations_book {
+  flex: 1;
+}
+
+
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.card-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+
 
 /* 연락처 페이지 스타일 */
+.location-img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 1rem 0;
+}
+
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -193,8 +243,7 @@
 }
 
 .contact-info {
-  background-color: #f8f9fa;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 10px;
 }
 

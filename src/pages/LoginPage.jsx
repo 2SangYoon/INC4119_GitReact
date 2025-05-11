@@ -3,14 +3,13 @@ import React, { useState } from "react";
 const LoginPage = ({ onLogin }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (onLogin(username, password)) {
-      setError('');
+      alert(`${username}님, 환영합니다!`);
     } else {
-      setError('아이디 또는 비밀번호가 올바르지 않습니다.');
+      alert('아이디 또는 비밀번호가 올바르지 않습니다.');
     }
   };
 
@@ -34,7 +33,6 @@ const LoginPage = ({ onLogin }) => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        {error && <p className="error">{error}</p>}
         <button type="submit">로그인</button>
       </form>
     </div>

@@ -1,36 +1,40 @@
 import React from "react";
 import FeatureCard from "../components/FeatureCard";
 
-const HomePage = () => {
+const HomePage = ({ setCurrentPage }) => {
   const features = [
     {
       title: "소개",
-      description: "제 소개입니다.",
+      description: "상윤씨의 소개입니다.",
+      page: "about",
     },
     {
       title: "프로젝트",
-      description: "제가 만든 프로젝트들 입니다.",
+      description: "상윤씨가 만든 프로젝트들입니다.",
+      page: "projects",
     },
     {
       title: "연락처",
-      description: "저에게 연락하는 방법입니다.",
+      description: "상윤씨에게 연락하는 방법입니다.",
+      page: "contact",
     },
     {
-      title: "여러분이 원하는",
-      description: "항목을 새로 만들어 보세요.",
+      title: "취미",
+      description: "상윤씨의 취미입니다.",
+      page: "hobby",
     },
   ];
 
   return (
     <div className="home-container">
-      <h2>환영합니다!</h2>
-      <p>이 웹사이트는 React를 사용하여 만든 개인 포트폴리오입니다.</p>
+      <h1 style={{ color: "teal" }}>🚀 Welcome to My Portfolio 🚀</h1>
       <div className="features">
         {features.map((feature, index) => (
           <FeatureCard
             key={index}
             title={feature.title}
             description={feature.description}
+            onClick={() => setCurrentPage(feature.page)} // 
           />
         ))}
       </div>

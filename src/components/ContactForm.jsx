@@ -4,18 +4,18 @@ const ContactForm = () => {
   return (
     <form className="contact-form">
       <div>
-        <label>이름:</label>
+        <label>Name:</label>
         <input type="text" />
       </div>
       <div>
-        <label>이메일:</label>
+        <label>e-Mail:</label>
         <input type="email" />
       </div>
       <div>
-        <label>메시지:</label>
+        <label>Message:</label>
         <textarea></textarea>
       </div>
-      <button type="submit">보내기</button>
+      <button type="submit">send</button>
     </form>
   );
 };

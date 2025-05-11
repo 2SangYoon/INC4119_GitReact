@@ -1,13 +1,13 @@
 import React from "react";
-import doraImage from "../assets/dora.jpg";
+import MyImage from "../assets/sangyoon_hp.png";
 
 const ProfileCard = () => {
   return (
     <div className="profile">
-      <img src={doraImage} alt="프로필" />
+      <img src={MyImage} alt="프로필" />
       <div className="profile-info">
-        <h3>이름</h3>
-        <p>안녕하세요! 저는 React를 좋아하는 개발자입니다.</p>
+        <h3>이상윤</h3>
+        <p>안녕하세요!<br></br>저는 동국대학교 정보통신공학과 이상윤입니다. 잘 부탁드립니다.</p>
       </div>
     </div>
   );
